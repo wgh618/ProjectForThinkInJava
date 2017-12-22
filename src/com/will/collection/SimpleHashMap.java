@@ -31,7 +31,7 @@ public class SimpleHashMap<K,V> extends AbstractMap<K,V> {
             Node<K,V> iPair = listIterator.next();
             if (iPair.getKey().equals(key)) {
                 oldValue = iPair.getValue();
-                listIterator.set(iPair);
+                    listIterator.set(iPair);
                 found = true;
                 break;
             }
@@ -50,7 +50,9 @@ public class SimpleHashMap<K,V> extends AbstractMap<K,V> {
         }
 
         for (Node<K,V> pair : buckets[index]) {
-            return pair.getValue();
+            if (pair.getKey().equals(key)) {
+                return pair.getValue();
+            }
         }
         return null;
      }
