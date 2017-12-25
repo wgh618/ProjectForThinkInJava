@@ -9,7 +9,7 @@ import java.io.IOException;
  * Description:读取文件内容
  * @Author Will Wu
  * @Email willwu618@gmail.com
- * @Date 2017/12/25
+ * @Date 2017-12-25
  */
 public class Demo1 {
     public static String read(String fileName) throws IOException{

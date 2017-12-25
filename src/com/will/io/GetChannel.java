@@ -12,7 +12,7 @@ import java.nio.channels.FileChannel;
  * 本类演示以上三个类，产生可写的、可读可写的以及可读的通道
  * @Author Will Wu
  * @Email willwu618@gmail.com
- * @Date 2017/12/25
+ * @Date 2017-12-25
  */
 public class GetChannel {
     private static final int SIZE = 1024;
